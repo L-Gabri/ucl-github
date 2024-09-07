@@ -1,13 +1,27 @@
 function buscar() {
-    // Esta função busca os dados e renderiza os resultados na seção "resultados-pesquisa".
-    // Ela itera sobre os dados, cria elementos HTML para cada item e os adiciona à seção.
-    
-    let section = document.getElementById("resultados-pesquisa"); // Seleciona a seção onde os resultados serão exibidos.
-    let resultados = ""; // Variável para armazenar o HTML gerado.
 
-    for (let dado of dados) { // Itera sobre cada item do array "dados".
-        // Cria um elemento HTML para cada item e adiciona à variável "resultados".
-        resultados += `
+    let section = document.getElementById("resultados-pesquisa");
+
+    let campoBusca = document.getElementById("campo-busca").value
+
+    if (!campoBusca) {
+        section.innerHTML = "<p>Nenhum clube encontrado. Informe o nome do clube</p>"
+        return
+    }
+    
+    campoBusca = campoBusca.toLowerCase()
+
+    let resultados = "";
+    let titulo = "";
+    let descricao = "";
+    let tags = "";
+
+    for (let dado of dados) { 
+        titulo = dado.titulo.toLowerCase()
+        descricao = dado.descricao.toLowerCase()
+        tags = dado.tags.toLowerCase()
+        if (titulo.includes(campoBusca) || descricao.includes(campoBusca) || tags.includes(campoBusca)) {
+            resultados += `
             <div class="item-resultado">
                 <h2>
                     <a href=${dado.link} target="_blank">${dado.titulo}</a>
@@ -16,7 +30,11 @@ function buscar() {
                 <a href=${dado.instagram} target="_blank">Instagram</a>
             </div>
         `;
-    }
+            }
+        }
+        if (!resultados) {
+            resultados = "<p>Nenhum clube encontrado</p>"
+        }
 
-    section.innerHTML = resultados; // Insere o HTML gerado na seção.
+    section.innerHTML = resultados;
 }
