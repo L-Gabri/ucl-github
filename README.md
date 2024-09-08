@@ -48,7 +48,7 @@ Este projeto está licenciado sob a licença MIT.
 
 **Acesse o projeto por este link:**
 
-* https://ucl-github.vercel.app/ 
+https://ucl-github.vercel.app/ 
 
 **Autor:**
 
