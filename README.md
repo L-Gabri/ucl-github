@@ -47,6 +47,6 @@ Este projeto está licenciado sob a licença MIT.
 
 **Autor:**
 
-[Luiz Gabriel]
+[Luiz Gabriel Inácio]
 
 **Data:** [07/09/2024]
