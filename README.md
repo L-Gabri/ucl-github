@@ -1,6 +1,7 @@
 ### **Aplicação: Buscador de Maiores Campeões da UEFA Champions League**
 **Imersão Dev com Google Gemini**
 
+
 **Descrição:**
 
 Esta aplicação web, desenvolvida em HTML, CSS e JavaScript, permite aos usuários pesquisarem por clubes de futebol e obterem informações sobre seus títulos na UEFA Champions League. Ao digitar o nome de um clube no campo de busca, a aplicação retorna os resultados relevantes, exibindo o nome do clube, uma breve descrição, links para o site oficial e para o Instagram do clube, além de informações sobre o número de títulos conquistados.
@@ -47,7 +48,7 @@ Este projeto está licenciado sob a licença MIT.
 
 **Acesse o projeto por este link:**
 
-https://ucl-github.vercel.app/
+* https://ucl-github.vercel.app/ 
 
 **Autor:**
 
